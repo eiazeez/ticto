@@ -1,0 +1,22 @@
+
+
+{
+  "userInvalido": {
+    "name": "12345",
+    "email": "",
+    "password": "senha",
+    "errors": {
+      "name": "Insira um Nome e Sobrenome válido.",
+      "email": "O campo Email é obrigatório.",
+      "pass": "O campo Password deve ter no minimo 8 caracteres."
+    }
+  },
+
+  "userValido": {
+    "name": "John Frusciante",
+    "email": "emailteste@mail.com",
+    "password": "senhavalida",
+    "success": "Usuário cadastrado com sucesso"
+  }
+
+}
