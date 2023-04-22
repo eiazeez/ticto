@@ -1,15 +1,8 @@
 import FormPage from "../pages/Formulario"
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"
+import form from "../../fixtures/form.json"
+import { Given, When, Then, After } from "cypress-cucumber-preprocessor/steps"
 
-describe('', function() {
-
-    before(function(){
-        cy.fixture('form').then(function(form) {
-            this.userInvalido = form.userInvalido
-            this.userValido = form.userValido
-            this.messages = form.messages
-        })
-    })
+context('', function() {
 
     Given ("que acesso o site Teste QA", function() {
         return true
@@ -23,18 +16,50 @@ describe('', function() {
         FormPage.shouldBeVisible()
     })
 
-    When  ("preencho os dados com {string}", function(input) {
-        cy.get('#name') .type(input)
-        cy.get('#email').type(input)
-        cy.get('#password') .type(input)
+})
+
+context('', function(){
+    And  ("preencho com dados Inválidos", function() {
+        FormPage.form(form.userInvalido)
     })
 
-    When  ("envio o Formulário com dados inválidos", function() {
+    And  ("preencho com dados Válidos", function() {
+        FormPage.form(form.userValido)
+    })
+
+    Given ("que já possuo um usuário válido no site Teste QA", function() {
+        cy.registerUser(form.userValido, form.messages)
+    })
+
+    When ("edito as informações do usuário", function(){
+        cy.ignoreUncaught()
+        FormPage.editUser(form.userValido)
+    })
+
+    Then ("o sistema deve me retornar o cadastro com as informações atualizadas", function() {
+        FormPage.userEditedShouldBe(form.userValido)
+        cy.deleteUser(form.userValido, form.messages)      
+    })
+
+    And  ("envio o Formulário", function() {
         FormPage.submit()
     })
 
-    Then  ("o sistema deve me retornar mensagens de erro", function() {
-        FormPage.errorShouldHave(this.userInvalido, this.messages)
+    When ("apago meu usuário", function(){
+        FormPage.delete(form.userValido) 
     })
 
+    Then  ("o sistema deve me retornar que a exclusão foi realizada com sucesso", function() {
+        FormPage.deleteMsgShouldBe(form.messages)
+    })
+
+    Then  ("o sistema deve me retornar mensagens de erro", function() {
+        FormPage.errorShouldHave(form.userValido, form.messages)
+    })
+
+    Then  ("O sistema deve me retornar o cadastro com as informações corretas", function() {
+        FormPage.successShouldHave(form.messages)
+        FormPage.infoUserShouldBe(form.userValido)
+        cy.deleteUser(form.userValido, form.messages)       
+    })
 })

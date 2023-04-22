@@ -17,9 +17,6 @@ module.exports = defineConfig({
       const cucumber = require('cypress-cucumber-preprocessor').default
       on('file:preprocessor', cucumber())
 
-      const testdata = require('../tictoAutomacao/cypress/fixtures/form.json')
-      global.testdata = testdata
-
     },
   },
 })

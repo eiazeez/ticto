@@ -15,9 +15,9 @@ const FormPage = {
     },
 
     form: function(user) {
-        if (user.name)      cy.get(el.inputName) .type(user.nome)
+        if (user.name)      cy.get(el.inputName) .type(user.name)
         if (user.email)     cy.get(el.inputEmail).type(user.email)
-        if (user.password)  cy.get(el.inputPass) .type(user.senha)
+        if (user.password)  cy.get(el.inputPass) .type(user.password)
     },
 
     submit: function() {

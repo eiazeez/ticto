@@ -1,5 +1,3 @@
-
-
 {
   "userInvalido": {
     "name": "12345",
@@ -27,5 +25,4 @@
       "pass": "O campo Password deve ter no minimo 8 caracteres."
     }
   }
-
 }
