@@ -3,8 +3,10 @@
     "cypress": "^12.10.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
   },
-
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/steps"
+  },
+  "dependencies": {
+    "cypress-tesults-reporter": "^1.4.1"
   }
 }

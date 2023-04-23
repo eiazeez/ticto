@@ -8,6 +8,7 @@ exports.el = {
     tableColumn: 'td',
     actionsButton: 'button',
     actions: 'div[class="dropdown-menu show"]',
+    deleteModal: 'div[id^=modalDelete]',
     deleteConfirm: 'button[form^="delete"]',
     deletedMsg: 'div[class$="alert-success"]',
     editName: 'input[name=e_name]',

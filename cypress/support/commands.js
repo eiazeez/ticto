@@ -25,12 +25,9 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import FormPage from "../support/pages/Formulario"
-import form from "../fixtures/form.json"
 
 Cypress.Commands.add('ignoreUncaught', () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
-        // returning false here prevents Cypress from
-        // failing the test
         return false
     })
 })

@@ -1,10 +1,13 @@
 #language: pt
 
-Funcionalidade: Cadastro de usuário
+#language: pt
+
+Funcionalidade: Controle de usuários
 
     Como usuário do sistema
     Eu gostaria de realizar um cadastro
-    Para acessar minha conta
+    Editar minhas informações da conta cadastrada
+    Apagar meu usuário
 
     Cenário: Acessar página com sucesso
     Dado    que acesso o site Teste QA

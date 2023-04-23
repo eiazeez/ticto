@@ -3,9 +3,10 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://qa-test.ticto.io/',
-    viewportWidth: 1440,
-    viewportHeight: 900,
+    viewportWidth: 1920,
+    viewportHeight: 1080,
     specPattern: "**/*.feature",
+    videoCompression: false,
     plugins: {
       "cypress-cucumber-preprocessor": {
         "step_definitions": "cypress/support/steps"
