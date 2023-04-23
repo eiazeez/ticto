@@ -1,22 +1,28 @@
-
-
 {
   "userInvalido": {
     "name": "12345",
     "email": "",
-    "password": "senha",
-    "errors": {
-      "name": "Insira um Nome e Sobrenome válido.",
-      "email": "O campo Email é obrigatório.",
-      "pass": "O campo Password deve ter no minimo 8 caracteres."
-    }
+    "password": "senha"
   },
 
   "userValido": {
     "name": "John Frusciante",
     "email": "emailteste@mail.com",
     "password": "senhavalida",
-    "success": "Usuário cadastrado com sucesso"
-  }
+    
+    "edit": {
+      "name": "Novo Nome",
+      "email": "novoemail@mail.com"
+    }
+  },
 
+  "messages": {
+    "deletedUserMsg": "Usuário removido com sucesso.",
+    "registeredUserMsg": "Usuário cadastrado com sucesso",
+    "errorsMsg": {
+      "name": "Insira um Nome e Sobrenome válido.",
+      "email": "O campo Email é obrigatório.",
+      "pass": "O campo Password deve ter no minimo 8 caracteres."
+    }
+  }
 }
