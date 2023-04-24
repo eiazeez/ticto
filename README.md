@@ -28,19 +28,19 @@ git clone https://github.com/eiazeez/ticto
 
 ## 🛠️ Abrir e rodar o projeto
 
-* Lembre-se entrar na pasta do projeto e instalar as depedências com
+* Lembre-se de entrar na pasta do projeto e instalar as depedências com
 ```
 npm install
 ```
 
-![CPT2206080057-621x347](https://user-images.githubusercontent.com/92765887/172528698-9dbcfb13-1319-448d-9b3a-b60bb2878b8f.gif)
+![image](https://user-images.githubusercontent.com/92765887/233994142-717645ff-d771-428e-bbb5-405355ca7d0d.png)
 
 
 * ainda dentro da pasta do projeto, para abrir a interface do Cypress use o comando
 ```
 npx cypress open
 ```
-![CPT2206080106-621x349](https://user-images.githubusercontent.com/92765887/172529378-ecf15eec-8443-4a7f-8a84-c3db8304196b.gif)
+![image](https://user-images.githubusercontent.com/92765887/233994396-0f94eb06-fe6c-42bc-bdd5-bde30131568a.png)
 
 
 
