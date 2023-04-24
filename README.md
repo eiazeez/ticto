@@ -48,7 +48,7 @@ npx cypress open
 * O projeto qa-Test.ticto está integrado com a plataforma [Tesults](www.tesults.com). Você pode encontrar um relatório das execuções dos testes no Tesults clicando [aqui](https://www.tesults.com/ticto/Ticto)
 
 
-![image](https://user-images.githubusercontent.com/92765887/234005640-adda1a1a-1169-4f47-b33c-e25478a4f0f4.png)
+![image](https://user-images.githubusercontent.com/92765887/234008208-fb592e6f-1e56-4686-b0d7-d1624438ba50.png)
 
 
 * Dentro desta platarforma é possível ver **relatórios de execução**, **screenshots** do passo a passo e **videos** como evidência de execução de cada teste
