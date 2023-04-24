@@ -3,7 +3,7 @@
 <p align="center">
 <img src="https://img.shields.io/badge/LICENSE-MIT-green"/> 
 <img src="https://img.shields.io/badge/CYPRESS-12.10.0-SUCCESS"/>
-<img src="https://img.shields.io/badge/STATUS-WORKING-yellow"/>
+<img src="https://img.shields.io/badge/STATUS-DONE-BLUE"/>
 </p>
 
 <h2 align="center"> • Repositório destinado a laboratório de Teste Automatizados no Cypress para o site https://qa-test.ticto.io/ </h2>
