@@ -15,7 +15,7 @@
 
 ## 🏁 Getting Started
 
-![NodeV](https://img.shields.io/badge/NODE-14.17.1-blue)
+![NodeV](https://img.shields.io/badge/NODE.JS-18.15.0-blue)
 
 O passo a passo para executar o Cypress é bem simples, será necessário que você tenha Node instalado previamente. No meu caso, o node utilizado foi a versão 18.15.0
 
