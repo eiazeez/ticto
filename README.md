@@ -45,8 +45,7 @@ npx cypress open
 ## 📈 Relatório de Evidências e resultados
 
 
-* O projeto qa-Test.ticto está integrado com a plataforma [Tesults](www.tesults.com). Você pode encontrar um relatório das execuções dos testes no Tesults clicando [aqui](https://www.tesults.com/azeez/Ticto/Suíte de Automação em Cypress)
-
+* O projeto qa-Test.ticto está integrado com a plataforma [Tesults](www.tesults.com). Você pode encontrar um relatório das execuções dos testes no Tesults clicando [aqui](https://www.tesults.com/azeez/Ticto/Su%C3%ADte%20de%20Automa%C3%A7%C3%A3o%20em%20Cypress)
 
 ![image](https://user-images.githubusercontent.com/92765887/234008208-fb592e6f-1e56-4686-b0d7-d1624438ba50.png)
 
