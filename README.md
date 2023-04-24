@@ -1,4 +1,4 @@
-<h1 align="center"> automationPractice no Cypress </h1>
+<h1 align="center"> qa-test.Ticto </h1>
 
 <p align="center">
 <img src="https://img.shields.io/badge/LICENSE-MIT-green"/> 
