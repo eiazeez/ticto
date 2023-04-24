@@ -1,7 +1,5 @@
 #language: pt
 
-#language: pt
-
 Funcionalidade: Controle de usuários
 
     Como usuário do sistema
