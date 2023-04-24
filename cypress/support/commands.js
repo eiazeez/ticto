@@ -23,3 +23,30 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import FormPage from "../support/pages/Formulario"
+import form from "../fixtures/form.json"
+
+Cypress.Commands.add('ignoreUncaught', () => {
+    Cypress.on('uncaught:exception', (err, runnable) => {
+        // returning false here prevents Cypress from
+        // failing the test
+        return false
+    })
+})
+
+Cypress.Commands.add('deleteUser', (user, message) => {
+    FormPage.delete(user) 
+    FormPage.deleteMsgShouldBe(message)
+})
+
+Cypress.Commands.add('registerUser', (user, message) => {
+    FormPage.go()
+    FormPage.shouldBeVisible()
+    FormPage.form(user)
+    FormPage.submit()
+    FormPage.successShouldHave(message)
+    FormPage.infoUserShouldBe(user)
+})
+
+
